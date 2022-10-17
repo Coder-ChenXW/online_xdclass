@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85d4647e-7398-4fed-9328-6dc80399bb85" name="Changes" comment="初次提交，完成部分接口" />
+    <list default="true" id="85d4647e-7398-4fed-9328-6dc80399bb85" name="Changes" comment="初次提交，完成部分接口">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/OnlineXdclassApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/OnlineXdclassApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/config/CacheKeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/config/CacheKeyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/config/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/config/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/controller/VideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/controller/VideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/controller/VideoOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/controller/VideoOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/exception/CustomExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/mapper/VideoOrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/mapper/VideoOrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/service/VideoOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/service/VideoOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/service/impl/VideoOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/service/impl/VideoOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/service/impl/VideoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/service/impl/VideoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/utils/BaseCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/utils/BaseCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EpisodeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EpisodeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PlayRecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PlayRecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VideoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/VideoOrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/VideoOrderMapper.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/net/xdclass/online_xdclass/interceptor" />
+    <property name="last_opened_file_path" value="D:/黑马/小滴课堂/源码/课程源码/第46章/第2集/online_xdclass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -68,11 +89,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\interceptor" />
-      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\model\entity" />
-      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\resources\mapper" />
       <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\utils" />
-      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\service\impl" />
+      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\service" />
+      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\model" />
+      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\mapper" />
+      <recent name="E:\project\java\springboot\small_classroom\online_xdclass\src\main\java\net\xdclass\online_xdclass\interceptor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,6 +162,7 @@
       <workItem from="1665668411846" duration="7657000" />
       <workItem from="1665679976990" duration="84000" />
       <workItem from="1665680085818" duration="274000" />
+      <workItem from="1666010503463" duration="20000" />
     </task>
     <servers />
   </component>
@@ -150,6 +172,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="94c97a93-7fa0-478a-81fa-4bcac7ad2385">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />

@@ -4,18 +4,18 @@
 
 
 
-    <select id="listVideo" resultType="net.xdclass.online_xdclass.model.entity.Video">
+    <select id="listVideo" resultType="Video">
 
         select * from video
 
     </select>
 
 
-    <select id="findById" resultType="net.xdclass.online_xdclass.model.entity.Video">
+    <select id="findById" resultType="Video">
                 select * from video where id=#{video_id}
     </select>
 
-    <select id="listVideoBanner" resultType="net.xdclass.online_xdclass.model.entity.Video">
+    <select id="listVideoBanner" resultType="VideoBanner">
 
         select  * from video_banner order by weight asc
 
@@ -23,7 +23,7 @@
 
 
 
-    <resultMap id="VideoDetailResultMap" type="net.xdclass.online_xdclass.model.entity.Video">
+    <resultMap id="VideoDetailResultMap" type="Video">
 
         <id column="id" jdbcType="INTEGER" property="id"/>
 
@@ -35,13 +35,13 @@
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
 
 
-        <collection property="chapterList" ofType="net.xdclass.online_xdclass.model.entity.Chapter">
+        <collection property="chapterList" ofType="Chapter">
             <id column="chapter_id" jdbcType="INTEGER" property="id"/>
             <result column="chapter_title" jdbcType="VARCHAR" property="title"/>
             <result column="ordered" jdbcType="INTEGER" property="ordered"/>
             <result column="chapter_create_time" jdbcType="TIMESTAMP" property="createTime"/>
 
-            <collection property="episodeList" ofType="net.xdclass.online_xdclass.model.entity.Episode">
+            <collection property="episodeList" ofType="Episode">
                 <id column="episode_id" jdbcType="INTEGER" property="id"/>
                 <result column="num" jdbcType="INTEGER" property="num"/>
                 <result column="episode_title" jdbcType="VARCHAR" property="title"/>

@@ -21,8 +21,6 @@ public class VideoController {
     private VideoService videoService;
 
 
-
-
     /**
      * 轮播图列表
      * @return
@@ -34,7 +32,6 @@ public class VideoController {
         List<VideoBanner> bannerList =  videoService.listBanner();
 
 
-//        int i = 1/0;
 
         return JsonData.buildSuccess(bannerList);
 
@@ -60,6 +57,8 @@ public class VideoController {
      */
     @GetMapping("find_detail_by_id")
     public JsonData findDetailById(@RequestParam(value = "video_id",required = true)int videoId){
+
+
 
 
         Video video = videoService.findDetailById(videoId);

@@ -25,9 +25,9 @@ public interface VideoOrderMapper {
 
 
     /**
-     * @Function: 功能描述 视频列表
-     * @Author: ChenXW
-     * @Date: 20:13 2022/10/11
+     * 视频列表
+     * @param userId
+     * @return
      */
     List<VideoOrder> listOrderByUserId(@Param("user_id") Integer userId);
 }

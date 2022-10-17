@@ -1,7 +1,6 @@
 package net.xdclass.online_xdclass.service;
 
 import net.xdclass.online_xdclass.model.entity.VideoOrder;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 

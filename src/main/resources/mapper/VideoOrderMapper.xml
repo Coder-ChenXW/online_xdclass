@@ -3,7 +3,7 @@
 <mapper namespace="net.xdclass.online_xdclass.mapper.VideoOrderMapper">
 
 
-    <select id="findByUserIdAndVideoIdAndState" resultType="net.xdclass.online_xdclass.model.entity.VideoOrder">
+    <select id="findByUserIdAndVideoIdAndState" resultType="VideoOrder">
 
         select * from video_order where  user_id = #{user_id} and video_id = #{video_id} and state = #{state}
 
@@ -11,19 +11,22 @@
 
 
     <insert id="saveOrder" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+
         INSERT INTO `video_order` (`out_trade_no`, `state`, `create_time`, `total_fee`, `video_id`,
          `video_title`, `video_img`, `user_id`)
         VALUES
         (#{outTradeNo,jdbcType=VARCHAR},#{state,jdbcType=INTEGER},#{createTime,jdbcType=TIMESTAMP},#{totalFee,jdbcType=INTEGER},
         #{videoId,jdbcType=INTEGER},#{videoTitle,jdbcType=VARCHAR},#{videoImg,jdbcType=VARCHAR},#{userId,jdbcType=INTEGER});
 
+
     </insert>
 
 
-    <select id="listOrderByUserId" resultType="net.xdclass.online_xdclass.model.entity.VideoOrder">
+
+    <select id="listOrderByUserId" resultType="VideoOrder">
 
         select * from video_order where user_id=#{user_id} order by create_time desc
 
     </select>
-    
+
 </mapper>

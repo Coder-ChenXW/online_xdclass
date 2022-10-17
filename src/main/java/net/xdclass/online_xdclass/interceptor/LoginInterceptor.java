@@ -5,6 +5,8 @@ import io.jsonwebtoken.Claims;
 import net.xdclass.online_xdclass.utils.JWTUtils;
 import net.xdclass.online_xdclass.utils.JsonData;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -27,13 +29,26 @@ public class LoginInterceptor implements HandlerInterceptor {
 
         try {
 
-            String accesToken = request.getHeader("token");
-            if (accesToken == null) {
-                accesToken = request.getParameter("token");
+
+//            // 如果是OPTIONS则结束请求
+//            if (HttpMethod.OPTIONS.toString().equals(request.getMethod())) {
+//                response.setStatus(HttpStatus.NO_CONTENT.value());
+//                response.setHeader("Access-Control-Allow-Origin", "*");
+//                response.setHeader("Access-Control-Allow-Credentials", "true");
+//                response.setHeader("Access-Control-Allow-Methods", "GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS");
+//                response.setHeader("Access-Control-Max-Age", "86400");
+//                response.setHeader("Access-Control-Allow-Headers", "*");
+//                return false;
+//            }
+
+
+            String accessToken = request.getHeader("token");
+            if (accessToken == null) {
+                accessToken = request.getParameter("token");
             }
 
-            if (StringUtils.isNotBlank(accesToken)) {
-                Claims claims = JWTUtils.checkJWT(accesToken);
+            if (StringUtils.isNotBlank(accessToken)) {
+                Claims claims = JWTUtils.checkJWT(accessToken);
                 if (claims == null) {
                     //告诉登录过期，重新登录
                     sendJsonMessage(response, JsonData.buildError("登录过期，重新登录"));
@@ -56,6 +71,8 @@ public class LoginInterceptor implements HandlerInterceptor {
 
         return false;
     }
+
+
 
 
     /**

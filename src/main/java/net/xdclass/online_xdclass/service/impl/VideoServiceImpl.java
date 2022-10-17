@@ -29,7 +29,7 @@ public class VideoServiceImpl implements VideoService {
 
         try{
 
-            Object cacheObj =  baseCache.getTenMinuteCache().get(CacheKeyManager.INDEX_VIDEO_LIST,()->{
+          Object cacheObj =  baseCache.getTenMinuteCache().get(CacheKeyManager.INDEX_VIDEL_LIST,()->{
 
                 List<Video> videoList = videoMapper.listVideo();
 
@@ -37,10 +37,10 @@ public class VideoServiceImpl implements VideoService {
 
             });
 
-            if(cacheObj instanceof List){
-                List<Video> videoList = (List<Video>)cacheObj;
-                return videoList;
-            }
+          if(cacheObj instanceof List){
+              List<Video> videoList = (List<Video>)cacheObj;
+              return videoList;
+          }
 
         }catch (Exception e){
             e.printStackTrace();
@@ -89,7 +89,7 @@ public class VideoServiceImpl implements VideoService {
 
         try{
 
-            Object cacheObject = baseCache.getOneHourCache().get( videoCacheKey, ()->{
+         Object cacheObject = baseCache.getOneHourCache().get( videoCacheKey, ()->{
 
                 // 需要使用mybaits关联复杂查询
                 Video video = videoMapper.findDetailById(videoId);
@@ -98,11 +98,11 @@ public class VideoServiceImpl implements VideoService {
 
             });
 
-            if(cacheObject instanceof Video){
+         if(cacheObject instanceof Video){
 
-                Video video = (Video)cacheObject;
-                return video;
-            }
+             Video video = (Video)cacheObject;
+             return video;
+         }
 
         }catch (Exception e){
             e.printStackTrace();
